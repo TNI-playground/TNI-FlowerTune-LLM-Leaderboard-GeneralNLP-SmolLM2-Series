@@ -1,0 +1,5 @@
+Communication budget: used 6.61 MB (+6.61 MB this round) / 200,000 MB
+Communication budget: used 13.22 MB (+6.61 MB this round) / 200,000 MB
+Communication budget: used 19.83 MB (+6.61 MB this round) / 200,000 MB
+Communication budget: used 26.44 MB (+6.61 MB this round) / 200,000 MB
+Communication budget: used 33.05 MB (+6.61 MB this round) / 200,000 MB
