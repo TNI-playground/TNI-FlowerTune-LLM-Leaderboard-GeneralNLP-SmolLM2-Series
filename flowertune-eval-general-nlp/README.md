@@ -30,12 +30,12 @@ bash script.sh
 
 ### Benchmark
 
-| Challenges                     | STEM       |   Social   |  Humanities |   Avg      |
-| :--------:                     | :--------: | :--------: | :--------:  | :--------: |
-|SmolLM2-135M-Instruct (20Rounds)| 12.81      |  9.06      |  8.67       |   10.18    |
-|SmolLM2-135M (200Rounds)        |            |            |             |            |
-|SmolLM2-360M-Instruct (20Rounds)|            |            |             |            |
-|SmolLM2-360M (200Rounds)        |            |            |             |            |
+| Challenges                      | STEM       |   Social   |  Humanities |   Avg      |
+| :--------:                      | :--------: | :--------: | :--------:  | :--------: |
+|SmolLM2-135M-Instruct (100Rounds)| 18.68      |  21.90     |  22.74      |   21.10    |
+|SmolLM2-135M (100Rounds)         | 2.94       |  3.31      |  2.29       |   2.84     |
+|SmolLM2-360M-Instruct (100Rounds)| 19.44      |  19.43     |  12.68      |   17.18    |
+|SmolLM2-360M (100Rounds)         |            |            |             |            |
 
 > [!NOTE]
 > Please ensure that you provide all **three accuracy values (STEM, SS, Humanities)** for three evaluation categories when submitting to the LLM Leaderboard (see the [`Make Submission`](https://github.com/adap/flower/tree/main/benchmarks/flowertune-llm/evaluation#make-submission-on-flowertune-llm-leaderboard) section).

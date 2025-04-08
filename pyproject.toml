@@ -31,7 +31,7 @@ serverapp = "t_ioi_nlp_smollm2.server_app:app"
 clientapp = "t_ioi_nlp_smollm2.client_app:app"
 
 [tool.flwr.app.config]
-model.name = "HuggingFaceTB/SmolLM2-360M-Instruct"
+model.name = "HuggingFaceTB/SmolLM2-360M"
 model.quantization = 4
 model.gradient-checkpointing = true
 model.lora.peft-lora-r = 8
@@ -48,12 +48,12 @@ train.training-arguments.logging-steps = 1
 train.training-arguments.num-train-epochs = 3
 train.training-arguments.max-steps = 20
 train.training-arguments.save-steps = 1000
-train.training-arguments.save-total-limit = 10
+train.training-arguments.save-total-limit = 1
 train.training-arguments.gradient-checkpointing = true
 train.training-arguments.lr-scheduler-type = "constant"
 strategy.fraction-fit = 0.1
 strategy.fraction-evaluate = 0.0
-num-server-rounds = 20
+num-server-rounds = 300
 
 [tool.flwr.app.config.static]
 dataset.name = "vicgalle/alpaca-gpt4"
