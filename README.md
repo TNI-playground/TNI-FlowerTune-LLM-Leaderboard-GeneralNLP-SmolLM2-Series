@@ -26,7 +26,7 @@ pip install -e .
 ## Experimental setup
 
 The dataset is divided into 20 partitions in an IID fashion, a partition is assigned to each ClientApp.
-We randomly sample a fraction (0.1) of the total nodes to participate in each round, for a total of `200` rounds.
+We randomly sample a fraction (0.1) of the total nodes to participate in each round, for a total of `100` rounds.
 All settings are defined in `pyproject.toml`.
 
 > [!IMPORTANT]
@@ -52,10 +52,10 @@ flwr run
 
 We use models with 4-bit quantization as default. The estimated VRAM consumption per client for each challenge is shown below:
 
-|Models  |SmolLM2-135M-Instruct (BS=16)|SmolLM2-360M-Instruct (BS=8)|SmolLM2-135M (BS=16)|SmolLM2-360M (BS=8 )|
+|Models  |SmolLM2-135M-Instruct (BS=16)|SmolLM2-360M-Instruct (BS=8)|SmolLM2-135M (BS=16)|SmolLM2-360M (BS=8,Round=300)|
 | :----: | :--------:                  | :--------:                 | :--------:         | :--------:         |
 |VRAM    |        8.03 GB              |    7.93 GB                 |    8.07 GB         |      7.80 GB       |
-|Comm    |        747.07 MB            |    1321.88 MB              |    747.07 MB       |       MB    | 
+|Comm    |        747.07 MB            |    1321.88 MB              |    747.07 MB       |      3965.62 MB           | 
 
 You can adjust the CPU/GPU resources you assign to each of the clients based on your device, which are specified with `options.backend.client-resources.num-cpus` and `options.backend.client-resources.num-gpus` under `[tool.flwr.federations.local-simulation]` entry in `pyproject.toml`.
 

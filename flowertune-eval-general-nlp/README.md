@@ -23,6 +23,8 @@ huggingface-cli login
 
 The model answers and accuracy values will be saved to `benchmarks/generation_{dataset_name}_{category_name}_{run_name}.jsonl` and `benchmarks/acc_{dataset_name}_{category_name}_{run_name}.txt`, respectively.
 
+Download fine-tuned model from [Google Drive](https://drive.google.com/drive/folders/1ynqkYJsyiu-CYQoRf8tWx8_eyJLDb3vE?usp=sharing), put everything under `results` directory
+
 ```bash
 cd /your_project_path/NI-FlowerTune-LLM-Leaderboard-GeneralNLP-SmolLM2-Series
 bash script.sh
@@ -35,7 +37,8 @@ bash script.sh
 |SmolLM2-135M-Instruct (100Rounds)| 18.68      |  21.90     |  22.74      |   21.10    |
 |SmolLM2-135M (100Rounds)         | 2.94       |  3.31      |  2.29       |   2.84     |
 |SmolLM2-360M-Instruct (100Rounds)| 19.44      |  19.43     |  12.68      |   17.18    |
-|SmolLM2-360M (100Rounds)         |            |            |             |            |
+|SmolLM2-360M (100Rounds)         |  0.00      |  0.00      |  0.00       |   0.00     |
+|SmolLM2-360M (300Rounds)         |  0.00      |  0.00      |  0.00       |   0.00     |
 
 > [!NOTE]
 > Please ensure that you provide all **three accuracy values (STEM, SS, Humanities)** for three evaluation categories when submitting to the LLM Leaderboard (see the [`Make Submission`](https://github.com/adap/flower/tree/main/benchmarks/flowertune-llm/evaluation#make-submission-on-flowertune-llm-leaderboard) section).
