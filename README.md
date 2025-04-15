@@ -56,6 +56,8 @@ flwr run
 |[SmolLM2-135M](https://drive.google.com/drive/folders/1oPrFSA3URA7u9D0t7Tw7ztmOztn6CcdY?usp=sharing) (100Rounds)         | 2.94       |  3.31      |  2.29       |   2.84     |
 |[SmolLM2-360M-Instruct](https://drive.google.com/drive/folders/1395vuT_HVPHEdrtlSk4oU3m2c-mflWGq?usp=sharing) (100Rounds)| 19.44      |  19.43     |  12.68      |   17.18    |
 
+SmolLM2-360M performed poorly under the same hyperparameters, so its results are omitted here.
+
 ## VRAM consumption
 
 We use models with 4-bit quantization as default. The estimated VRAM consumption per client for each challenge is shown below:
