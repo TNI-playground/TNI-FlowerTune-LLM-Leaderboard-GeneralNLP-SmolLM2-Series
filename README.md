@@ -50,6 +50,8 @@ flwr run
 
 ### Benchmark
 
+All the experiments are conducted on a NVIDIA GeForce GTX 1080 (8 GB).
+
 | Challenges                      | STEM       |   Social   |  Humanities |   Avg      |
 | :--------:                      | :--------: | :--------: | :--------:  | :--------: |
 |[SmolLM2-135M-Instruct](https://drive.google.com/drive/folders/1x7J2tosTtlkvUXSJGyB-ZHxUZhU3cMM4?usp=sharing) (100Rounds)| 18.68      |  21.90     |  22.74      |   21.10    |
